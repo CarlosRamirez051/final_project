@@ -1,0 +1,164 @@
+<!--
+   Carlos Ramirez
+   April 18, 2026
+   File: contact.html
+   Project: Cakebox Bakery
+   Description: Contact page with form and location info
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Cakebox Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">🎂 <span>Cakebox</span> Bakery</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="contact-layout">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Have a question or want to place a custom order? Reach out any time!</p>
+
+        <ul>
+          <li>📍 123 Sweet Street, Orlando, FL 32801</li>
+          <li>📞 <a href="tel:+14075550192">(407) 555-0192</a></li>
+          <li>✉️ <a href="mailto:hello@cakeboxbakery.com">hello@cakeboxbakery.com</a></li>
+          <li>📸 <a href="https://instagram.com/cakeboxbakery" target="_blank">@cakeboxbakery on Instagram</a></li>
+        </ul>
+
+        <h3 style="margin-top:20px;">Hours</h3>
+        <ul>
+          <li>Monday – Saturday: 7am – 7pm</li>
+          <li>Sunday: 9am – 4pm</li>
+        </ul>
+
+        <h3 style="margin-top:20px;">Common Questions</h3>
+        <ul>
+          <li><strong>Custom orders?</strong> We need 5–7 days notice.</li>
+          <li><strong>Delivery?</strong> Free over $30 in Orlando.</li>
+          <li><strong>Dietary needs?</strong> Yes — ask us!</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <!-- FORM requirement -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+
+        <form id="contactForm">
+
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(407) 555-0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">-- Choose a topic --</option>
+              <option value="custom">Custom Cake Order</option>
+              <option value="general">General Question</option>
+              <option value="delivery">Delivery Question</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us what you need!" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="newsletter" />
+              Sign me up for the newsletter 🍪
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+
+          <p id="successMsg" style="display:none; color:green; margin-top:14px; font-weight:bold;">
+            ✅ Message sent! We'll reply within 24 hours.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>🎂 Cakebox Bakery</h4>
+        <p>Baked with love in Orlando, FL.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 123 Sweet St, Orlando FL</li>
+          <li><a href="mailto:hello@cakeboxbakery.com">✉️ hello@cakeboxbakery.com</a></li>
+          <li><a href="https://instagram.com/cakeboxbakery" target="_blank">📸 @cakeboxbakery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Cakebox Bakery | <a href="mailto:hello@cakeboxbakery.com">hello@cakeboxbakery.com</a> | <a href="https://instagram.com/cakeboxbakery">Instagram</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('successMsg').style.display = 'block';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

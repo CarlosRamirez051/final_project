@@ -1,0 +1,201 @@
+<!--
+   Carlos Ramirez
+   April 18, 2026
+   File: shop.html
+   Project: Cakebox Bakery
+   Description: Shop page with sidebar and product grid
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Cakebox Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">🎂 <span>Cakebox</span> Bakery</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <h1>Our Shop</h1>
+    <p>Browse all of our freshly baked treats!</p>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <div class="shop-layout">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <h3>Categories</h3>
+        <!-- List #1: Category list -->
+        <ul>
+          <li><a href="#">All Items (24)</a></li>
+          <li><a href="#">Cupcakes (9)</a></li>
+          <li><a href="#">Cookies (6)</a></li>
+          <li><a href="#">Custom Cakes (4)</a></li>
+          <li><a href="#">Brownies (3)</a></li>
+          <li><a href="#">Seasonal (2)</a></li>
+        </ul>
+
+        <h3>Top Picks</h3>
+        <!-- List #2: Top picks list -->
+        <ul>
+          <li><a href="product.html">Birthday Dream Cupcake</a></li>
+          <li><a href="#">Lemon Burst Pound-Cake</a></li>
+          <li><a href="#">Cinnamon Coffee Cake</a></li>
+          <li><a href="#">Almond Mint Cupcake</a></li>
+          <li><a href="#">Chocolate Chip Cookie</a></li>
+        </ul>
+
+        <h3>Dietary Options</h3>
+        <ul>
+          <li>✅ Gluten-Free available</li>
+          <li>✅ Vegan options</li>
+          <li>✅ Nut-Free options</li>
+        </ul>
+
+      </aside>
+
+      <!-- Products -->
+      <div class="shop-products">
+        <p style="margin-bottom: 16px; color: #666;">Showing 6 of 24 products</p>
+
+        <div class="products-grid">
+
+          <!-- Product 1 -->
+          <div class="card">
+            <a href="product.html">
+              <img
+                src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=500&auto=format&fit=crop"
+                alt="Birthday cupcake"
+              />
+            </a>
+            <div class="card-body">
+              <h3>Birthday Dream Cupcake</h3>
+              <p>Vanilla buttercream sprinkles fluffy cake</p>
+              <span class="price">$3.00</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&auto=format&fit=crop"
+              alt="chocolate cookies"
+            />
+            <div class="card-body">
+              <h3>Chocolate Chip Cookie</h3>
+              <p>Warm gooey buttery chocolate chip cookie</p>
+              <span class="price">$3.00</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&auto=format&fit=crop"
+              alt="Vanilla Birthday cupcake"
+            />
+            <div class="card-body">
+              <h3>Vanilla Birthday Cupcake</h3>
+              <p>Classic vanilla with strawberry frosting.</p>
+              <span class="price">$3.00</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&auto=format&fit=crop"
+              alt="Red velvet cupcake"
+            />
+            <div class="card-body">
+              <h3>Cinnamon Coffee Cake</h3>
+              <p>Warm cinnamon crumb soft buttery cake</p>
+              <span class="price">$3.50</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=500&auto=format&fit=crop"
+              alt="Lemon cupcake"
+            />
+            <div class="card-body">
+              <h3>Lemon Burst Cupcake</h3>
+              <p>Zesty lemon with citrus buttercream.</p>
+              <span class="price">$3.00</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&auto=format&fit=crop"
+              alt="Caramel brownie"
+            />
+            <div class="card-body">
+              <h3>Almond Mint Cupcake</h3>
+              <p>Moist almond mint creamy frosted cupcake</p>
+              <span class="price">$4.00</span>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>🎂 Cakebox Bakery</h4>
+        <p>Baked with love in Orlando, FL.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 123 Sweet St, Orlando FL</li>
+          <li><a href="mailto:hello@cakeboxbakery.com">✉️ hello@cakeboxbakery.com</a></li>
+          <li><a href="https://instagram.com/cakeboxbakery" target="_blank">📸 @cakeboxbakery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Cakebox Bakery | <a href="mailto:hello@cakeboxbakery.com">hello@cakeboxbakery.com</a> | <a href="https://instagram.com/cakeboxbakery">Instagram</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

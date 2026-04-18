@@ -1,0 +1,190 @@
+<!--
+   Carlos Ramirez
+   April 18, 2026
+   File: product.html
+   Project: Cakebox Bakery
+   Description: Product detail page - Chocolate Dream Cupcake
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocolate Dream Cupcake - Cakebox Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">🎂 <span>Cakebox</span> Bakery</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <h1>Product Details</h1>
+    <p><a href="index.html">Home</a> &rsaquo; <a href="shop.html">Shop</a> &rsaquo; Chocolate Dream Cupcake</p>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Product Detail Section -->
+    <div class="product-detail">
+
+      <img
+        src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=700&auto=format&fit=crop"
+        alt="Birthday Dream Cupcake"
+      />
+
+      <div class="product-info">
+        <h2>Birthday Dream Cupcake</h2>
+
+        <div class="stars">★★★★★</div>
+        <p style="color:#888; margin-bottom:12px;">4.9 out of 5 — 128 reviews</p>
+
+        <span class="price">$3.00</span>
+
+        <p>
+          A soft, fluffy vanilla sponge baked fresh every morning, infused with a light, sweet aroma that feels like a celebration.
+          It’s topped with our smooth, hand-whipped birthday buttercream, rich and creamy with just the right touch of sweetness, then finished with a colorful sprinkle drizzle that adds a fun, festive crunch. 
+          Pure celebration in every bite, like a birthday party in cupcake form!
+        </p>
+
+        <h4 style="margin-bottom: 8px;">Ingredients:</h4>
+        <!-- Ingredients List -->
+        <ul>
+          <li>Free-range eggs and butter</li>
+          <li>All-purpose flour</li>
+          <li>Granulated sugar</li>
+          <li>Baking powder</li>
+          <li>Vanilla extract</li>
+          <li>Whole milk</li>
+          <li>Food coloring (optional)</li>
+          <li>Rainbow sprinkles</li>
+        </ul>
+
+        <br />
+        <button class="add-cart-btn" onclick="this.textContent='✓ Added to Cart!'">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <!-- Nutrition Table -->
+    <h2 class="section-title">Nutritional Information</h2>
+    <p style="color:#666; margin-bottom:12px;">Per one cupcake serving.</p>
+
+    <!-- TABLE requirement -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nutrient</th>
+          <th>Amount</th>
+          <th>% Daily Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Calories</td>
+          <td>320 kcal</td>
+          <td>16%</td>
+        </tr>
+        <tr>
+          <td>Total Fat</td>
+          <td>14 g</td>
+          <td>18%</td>
+        </tr>
+        <tr>
+          <td>Cholesterol</td>
+          <td>55 mg</td>
+          <td>18%</td>
+        </tr>
+        <tr>
+          <td>Sodium</td>
+          <td>210 mg</td>
+          <td>9%</td>
+        </tr>
+        <tr>
+          <td>Total Carbohydrates</td>
+          <td>46 g</td>
+          <td>17%</td>
+        </tr>
+        <tr>
+          <td>Dietary Fiber</td>
+          <td>2 g</td>
+          <td>7%</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td>4 g</td>
+          <td>8%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+      <h2 class="section-title">Customer Reviews</h2>
+
+      <div class="review-box">
+        <p class="reviewer">Sarah M. <span class="stars">★★★★★</span></p>
+        <p>"The best cupcake I've ever had! The ganache is perfectly rich. I order every Friday."</p>
+      </div>
+
+      <div class="review-box">
+        <p class="reviewer">James R. <span class="stars">★★★★★</span></p>
+        <p>"Dense, moist, and not too sweet. You can really taste the quality chocolate. My weekly treat!"</p>
+      </div>
+
+      <div class="review-box">
+        <p class="reviewer">Priya K. <span class="stars">★★★★☆</span></p>
+        <p>"Incredible flavor and great packaging. Would love a nut-free version in the future!"</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>🎂 Cakebox Bakery</h4>
+        <p>Baked with love in Orlando, FL.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 123 Sweet St, Orlando FL</li>
+          <li><a href="mailto:hello@cakeboxbakery.com">✉️ hello@cakeboxbakery.com</a></li>
+          <li><a href="https://instagram.com/cakeboxbakery" target="_blank">📸 @cakeboxbakery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Cakebox Bakery | <a href="mailto:hello@cakeboxbakery.com">hello@cakeboxbakery.com</a> | <a href="https://instagram.com/cakeboxbakery">Instagram</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
